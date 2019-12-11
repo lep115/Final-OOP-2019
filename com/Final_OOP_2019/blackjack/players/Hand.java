@@ -96,14 +96,14 @@ public class Hand {
 
 	public static int bet() {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("How much cash would you like to bet?");
+		System.out.println("How much cash would you like to bet? (minimum $50)");
 
 		while (!scanner.hasNextInt()) {
 			try {
 				bet = scanner.nextInt();
 			} catch (InputMismatchException exception) {
 				System.out.println("Invalid input. Please answer with an integer value.");
-				System.out.println("\nHow much cash would you like to start with?");
+				System.out.println("\nHow much cash would you like to bet? (minimum $50)");
 				scanner.nextLine();
 			}
 		}

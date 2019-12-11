@@ -40,7 +40,7 @@ public class Game {
 		while (bet > cash) {
 			System.out.println("You don't have that much money! Please bet less or deposit more.");
 			Thread.sleep(500);
-			System.out.println("How much money do you want to bet?");
+			System.out.println("How much money do you want to bet? (minimum $50)");
 			bet = readUserIntInput();
 		}
 		cash -= bet;
